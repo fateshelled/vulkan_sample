@@ -12,13 +12,13 @@ find_package(Vulkan REQUIRED)
 FetchContent_Declare(
   volk
   GIT_REPOSITORY https://github.com/zeux/volk.git
-  GIT_TAG vulkan-sdk-1.4.321.0
+  GIT_TAG vulkan-sdk-1.3.283.0
 )
 
 FetchContent_Declare(
   VulkanMemoryAllocator
   GIT_REPOSITORY https://github.com/GPUOpen-LibrariesAndSDKs/VulkanMemoryAllocator.git
-  GIT_TAG v3.2.1
+  GIT_TAG v3.0.1
 )
 
 FetchContent_MakeAvailable(volk VulkanMemoryAllocator)

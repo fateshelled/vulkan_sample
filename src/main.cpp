@@ -116,7 +116,7 @@ int main() {
     device.destroy();
     instance.destroy();
 
-    std::cout << "Sample finished successfully." << std::endl;
+    std::cout << "Sample finished successfully.\n";
     return 0;
   } catch (const std::exception& ex) {
     std::cerr << "Error: " << ex.what() << std::endl;
