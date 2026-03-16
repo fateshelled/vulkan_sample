@@ -21,7 +21,11 @@ FetchContent_Declare(
   GIT_TAG v3.0.1
 )
 
-FetchContent_MakeAvailable(volk VulkanMemoryAllocator)
+FetchContent_MakeAvailable(volk)
+FetchContent_GetProperties(VulkanMemoryAllocator)
+if(NOT vulkanmemoryallocator_POPULATED)
+  FetchContent_Populate(VulkanMemoryAllocator)
+endif()
 
 add_executable(vulkan_sample
   src/main.cpp
